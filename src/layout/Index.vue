@@ -58,17 +58,19 @@
 </script>
 
 <style>
-.openSidebar .slider{
+.slider{
   width: 200px;
   height: 100%;
-  background: #ddd;
+  background: #263240;
   position: fixed;
   z-index: 999;
+}
+.openSidebar .slider{
+  width: 200px;
 }
 .hideSidebar .slider{
   width: 0;
   height: 100%;
-  background: #ddd;
   position: fixed;
 
 }
