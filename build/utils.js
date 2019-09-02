@@ -25,7 +25,8 @@ exports.cssLoaders = function (options) {
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      javascriptEnabled: true
     }
   }
 
@@ -58,7 +59,14 @@ exports.cssLoaders = function (options) {
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
-    less: generateLoaders('less'),
+    less: generateLoaders('less',{
+      modifyVars:{
+        'primary-color': '#0aa679',
+        'link-color': '#0aa679',
+        'border-radius-base': '2px',
+      },
+      javascriptEnabled: true,
+    }),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
