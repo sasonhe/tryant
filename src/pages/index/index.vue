@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    index
+    <div class="example" ref="divScroll">
+      index
+    </div>
   </div>
 </template>
 
@@ -12,10 +14,17 @@
     },
     created() {
     },
+    mounted() {
+
+    },
     methods: {
+
     }
   }
 </script>
 
 <style>
+.example{
+  /* height: 1800px; */
+}
 </style>

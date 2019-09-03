@@ -1,8 +1,11 @@
 <template>
   <div class="app-main">
-    <div class="box-padding">
-      <router-view />
-    </div>
+    <GeminiScrollbar :autoshow="true">
+      <div class="box-padding">
+        <router-view />
+      </div>
+    </GeminiScrollbar>
+
   </div>
 </template>
 
@@ -20,4 +23,13 @@
 </script>
 
 <style>
+.app-main{
+  padding-top: 84px;
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.box-padding{
+
+}
 </style>
