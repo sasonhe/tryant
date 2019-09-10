@@ -6,9 +6,7 @@
           <a-icon style="fontSize:20px;fontWeight:bold;width:20px;height:20px;" :type="typeIcon" />
         </div>
       </div>
-      <div class="nav-right fr"></div>
-      <!-- <button type="button" name="button" @click="toggleSideBar()">BTN</button>
-      <a-button type="primary" @click="toggleSideBar()">Primary</a-button> -->
+      <div class="nav-right fr">123</div>
     </div>
     <div class="tags-view-container">
 
@@ -45,9 +43,16 @@
 .header{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - 200px);
   background: #fff;
   z-index: 998;
+  transition: width .28s;
+}
+.hideSidebar .header{
+  width: calc(100% - 80px);
+}
+.mobile.hideSidebar .header{
+  width: 100%;
 }
 .tags-view-container{
   height: 34px;

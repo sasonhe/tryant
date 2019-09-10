@@ -7,8 +7,8 @@ import router from './router'
 import store from './store';
 import '@/assets/css/public.css'
 Vue.config.productionTip = false
-import { Button,Menu,Icon } from 'ant-design-vue'
-Vue.use(Button).use(Menu).use(Icon)
+import { Button,Menu,Icon,Tabs } from 'ant-design-vue'
+Vue.use(Button).use(Menu).use(Icon).use(Tabs)
 import GeminiScrollbar from 'vue-gemini-scrollbar'
 Vue.use(GeminiScrollbar)
 /* eslint-disable no-new */
